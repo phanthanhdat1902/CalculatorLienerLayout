@@ -16,24 +16,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     String operator=new String();
     TextView buttonResultTop;
     TextView buttonResultBot;
-//    Button ButtonZero;
-//    Button ButtonOne;
-//    Button ButtonTwo;
-//    Button ButtonThree;
-//    Button ButtonFour;
-//    Button ButtonFive;
-//    Button ButtonSix;
-//    Button ButtonSeven;
-//    Button ButtonEight;
-//    Button ButtonNine;
-//    Button ButtonResult;
-//    Button ButtonAdd;
-//    Button ButtonSub;
-//    Button ButtonMulti;
-//    Button ButtonDiv;
-//    Button ButtonDelete;
-//    Button ButtonDeleteAll;
-//    Button ButtonDeleteOne;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
