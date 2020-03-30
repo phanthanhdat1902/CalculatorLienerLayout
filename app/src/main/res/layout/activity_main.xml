@@ -5,15 +5,33 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
-    <EditText
+    tools:context=".MainActivity"
+    android:background="#cdc9c9">
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:text="0"
-        android:textSize="60dp"
-        android:gravity="right|center"
-        android:background="#cdc9c9"></EditText>
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/buttonResultTop"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/dsdigi"
+            android:gravity="right|center"
+            android:textSize="20sp"></TextView>
+
+        <TextView
+            android:id="@+id/buttonResultBot"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:fontFamily="@font/dsdigi"
+            android:gravity="right|center"
+            android:text="0"
+            android:textSize="50sp"></TextView>
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -28,214 +46,288 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="MC"
-                android:background="#cdc9c9"></Button>
+                android:background="#cdc9c9"
+                android:fontFamily="@font/dsdigi"></Button>
             <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="MR"
-                android:background="#cdc9c9"></Button>
+                android:background="#cdc9c9"
+                android:fontFamily="@font/dsdigi"></Button>
             <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="M+"
-                android:background="#cdc9c9"></Button>
+                android:background="#cdc9c9"
+                android:fontFamily="@font/dsdigi"></Button>
             <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="M-"
-                android:background="#cdc9c9"></Button>
+                android:background="#cdc9c9"
+                android:fontFamily="@font/dsdigi"></Button>
             <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="MS"
-                android:background="#cdc9c9"></Button>
+                android:background="#cdc9c9"
+                android:fontFamily="@font/dsdigi"></Button>
             <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="M^"
-                android:background="#cdc9c9"></Button>
+                android:background="#cdc9c9"
+                android:fontFamily="@font/dsdigi"></Button>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2">
             <Button
+                android:layout_margin="2dp"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="%"
-                android:background="#DDDDDD"></Button>
+                android:background="#E8E8E8"
+                android:fontFamily="@font/dsdigi"></Button>
             <Button
+                android:layout_margin="2dp"
+                android:id="@+id/ButtonDeleteOne"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                     android:text="CE"
-                android:background="#DDDDDD"></Button>
+                android:background="#E8E8E8"
+                android:fontFamily="@font/dsdigi"></Button>
 
             <Button
+                android:layout_margin="2dp"
+                android:id="@+id/ButtonDeleteAll"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="C"
-                android:background="#DDDDDD"></Button>
+                android:background="#E8E8E8"
+                android:fontFamily="@font/dsdigi"></Button>
 
             <Button
+                android:layout_margin="2dp"
+                android:id="@+id/ButtonDelete"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="X"
-                android:background="#DDDDDD"></Button>
+                android:background="#E8E8E8"
+                android:fontFamily="@font/dsdigi"></Button>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="2"
-            android:background="#fffafa">
+            android:layout_weight="2">
             <Button
+                android:layout_margin="2dp"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="1/x"
-                android:background="#DDDDDD"></Button>
+                android:background="#E8E8E8"
+                android:fontFamily="@font/dsdigi"></Button>
             <Button
+                android:layout_margin="2dp"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="x^2"
-                android:background="#DDDDDD"></Button>
+                android:background="#E8E8E8"
+                android:fontFamily="@font/dsdigi"></Button>
             <Button
+                android:layout_margin="2dp"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="\/2 x"
-                android:background="#DDDDDD"></Button>
+                android:background="#E8E8E8"
+                android:fontFamily="@font/dsdigi"></Button>
             <Button
+                android:layout_margin="2dp"
+                android:id="@+id/ButtonDiv"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="/"
-                android:background="#DDDDDD"></Button>
+                android:background="#E8E8E8"
+                android:fontFamily="@font/dsdigi"></Button>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2">
             <Button
+                android:layout_margin="2dp"
+                android:id="@+id/ButtonSeven"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="7"
-                android:background="#fffafa"></Button>
+                android:background="#fffafa"
+                android:fontFamily="@font/dsdigi"></Button>
+
             <Button
+                android:layout_margin="2dp"
+                android:id="@+id/ButtonEight"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="#fffafa"
                 android:text="8"
-                android:background="#fffafa"></Button>
+                android:fontFamily="@font/dsdigi"></Button>
+
             <Button
+                android:layout_margin="2dp"
+                android:id="@+id/ButtonNine"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="9"
-                android:background="#fffafa"></Button>
+                android:background="#fffafa"
+                android:fontFamily="@font/dsdigi"></Button>
             <Button
+                android:layout_margin="2dp"
+                android:id="@+id/ButtonMulti"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="X"
-                android:background="#DDDDDD"></Button>
+                android:background="#E8E8E8"
+                android:fontFamily="@font/dsdigi"></Button>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2">
             <Button
+                android:layout_margin="2dp"
+                android:id="@+id/ButtonFour"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="4"
-                android:background="#fffafa"></Button>
+                android:background="#fffafa"
+                android:fontFamily="@font/dsdigi"></Button>
             <Button
+                android:layout_margin="2dp"
+                android:id="@+id/ButtonFive"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="5"
-                android:background="#fffafa"></Button>
+                android:background="#fffafa"
+                android:fontFamily="@font/dsdigi"></Button>
             <Button
+                android:layout_margin="2dp"
+                android:id="@+id/ButtonSix"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="6"
-                android:background="#fffafa"></Button>
+                android:background="#fffafa"
+                android:fontFamily="@font/dsdigi"></Button>
             <Button
+                android:layout_margin="2dp"
+                android:id="@+id/ButtonSub"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="-"
-                android:background="#DDDDDD"></Button>
+                android:background="#E8E8E8"
+                android:fontFamily="@font/dsdigi"></Button>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2">
             <Button
+                android:layout_margin="2dp"
+                android:id="@+id/ButtonOne"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="1"
-                android:background="#fffafa"></Button>
+                android:background="#fffafa"
+                android:fontFamily="@font/dsdigi"></Button>
             <Button
+                android:layout_margin="2dp"
+                android:id="@+id/ButtonTwo"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="2"
-                android:background="#fffafa"></Button>
+                android:background="#fffafa"
+                android:fontFamily="@font/dsdigi"></Button>
             <Button
+                android:layout_margin="2dp"
+                android:id="@+id/ButtonThree"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="3"
-                android:background="#fffafa"></Button>
+                android:background="#fffafa"
+                android:fontFamily="@font/dsdigi"></Button>
             <Button
+                android:layout_margin="2dp"
+                android:id="@+id/ButtonAdd"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="+"
-                android:background="#DDDDDD"></Button>
+                android:background="#E8E8E8"
+                android:fontFamily="@font/dsdigi"></Button>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2">
             <Button
+                android:layout_margin="2dp"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="+/-"
-                android:background="#fffafa"></Button>
+                android:background="#fffafa"
+                android:fontFamily="@font/dsdigi"></Button>
             <Button
+                android:layout_margin="2dp"
+                android:id="@+id/ButtonZero"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="0"
-                android:background="#fffafa"></Button>
+                android:background="#fffafa"
+                android:fontFamily="@font/dsdigi"></Button>
             <Button
+                android:layout_margin="2dp"
+                android:id="@+id/ButtonDot"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="."
-                android:background="#fffafa"></Button>
+                android:background="#fffafa"
+                android:fontFamily="@font/dsdigi"></Button>
             <Button
+                android:layout_margin="2dp"
+                android:id="@+id/ButtonResult"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="="
-                android:background="#339999"></Button>
+                android:background="#339999"
+                android:fontFamily="@font/dsdigi"></Button>
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
